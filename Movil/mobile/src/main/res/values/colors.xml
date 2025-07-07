@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary">#1D9E00</color>
+    <color name="primary_hold">#30CB3D</color>
+    <color name="secondary">#3A63EB</color>
+    <color name="secondary_hold">#3DBEED</color>
+    <color name="danger">#F60B0F</color>
+    <color name="danger_hold">#B92D3B</color>
+    <color name="other">#6C757D</color>
+    <color name="other_hold">#5C636A</color>
 </resources>

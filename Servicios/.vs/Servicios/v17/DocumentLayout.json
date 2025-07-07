@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|c:\\users\\rocha\\documents\\trabajo\\ecotrack\\servicios\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|c:\\users\\rocha\\documents\\trabajo\\ecotrack\\servicios\\controllers\\v1\\sistema\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|solutionrelative:controllers\\v1\\sistema\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|c:\\users\\rocha\\documents\\trabajo\\ecotrack\\servicios\\models\\viewmodel\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|solutionrelative:models\\viewmodel\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|c:\\users\\rocha\\documents\\trabajo\\ecotrack\\servicios\\controllers\\v1\\sistema\\catalogocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|solutionrelative:controllers\\v1\\sistema\\catalogocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|c:\\users\\rocha\\documents\\trabajo\\ecotrack\\servicios\\models\\viewmodel\\paismodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|solutionrelative:models\\viewmodel\\paismodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|c:\\users\\rocha\\documents\\trabajo\\ecotrack\\servicios\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|solutionrelative:controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|c:\\users\\rocha\\documents\\trabajo\\ecotrack\\servicios\\models\\ecotrackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|solutionrelative:models\\ecotrackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|c:\\users\\rocha\\documents\\trabajo\\ecotrack\\servicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|c:\\users\\rocha\\documents\\trabajo\\ecotrack\\servicios\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{424F53C0-FFEE-4794-A093-4A9AC708F750}|Servicios.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Models\\ViewModel\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModel\\UsuarioModel.cs",
+              "ToolTip": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Models\\ViewModel\\UsuarioModel.cs",
+              "RelativeToolTip": "Models\\ViewModel\\UsuarioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T17:09:55.798Z",
+              "WhenOpened": "2025-07-06T20:34:00.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaisModel.cs",
+              "DocumentMoniker": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Models\\ViewModel\\PaisModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModel\\PaisModel.cs",
+              "ToolTip": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Models\\ViewModel\\PaisModel.cs",
+              "RelativeToolTip": "Models\\ViewModel\\PaisModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T19:23:06.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CatalogoController.cs",
+              "DocumentMoniker": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Controllers\\v1\\Sistema\\CatalogoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\Sistema\\CatalogoController.cs",
+              "ToolTip": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Controllers\\v1\\Sistema\\CatalogoController.cs",
+              "RelativeToolTip": "Controllers\\v1\\Sistema\\CatalogoController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAEwCIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T19:18:52.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Controllers\\Auth\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Auth\\AuthController.cs",
+              "ToolTip": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Controllers\\Auth\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\Auth\\AuthController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T18:46:56.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SeguridadController.cs",
+              "DocumentMoniker": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Controllers\\v1\\Sistema\\SeguridadController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\Sistema\\SeguridadController.cs",
+              "ToolTip": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Controllers\\v1\\Sistema\\SeguridadController.cs",
+              "RelativeToolTip": "Controllers\\v1\\Sistema\\SeguridadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T18:45:40.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-02T18:29:04.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T18:09:33.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EcoTrackContext.cs",
+              "DocumentMoniker": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Models\\EcoTrackContext.cs",
+              "RelativeDocumentMoniker": "Models\\EcoTrackContext.cs",
+              "ToolTip": "C:\\Users\\rocha\\Documents\\Trabajo\\EcoTrack\\Servicios\\Models\\EcoTrackContext.cs",
+              "RelativeToolTip": "Models\\EcoTrackContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T18:18:11.397Z",
               "EditorCaption": ""
             }
           ]
