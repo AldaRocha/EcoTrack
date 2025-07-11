@@ -1,0 +1,74 @@
+<div class="login-container">
+    <div class="logo-container">
+        <img
+            class="logo"
+            src="../../../../assets/img/logo_eco_track_sf.png"
+            alt="Logo de EcoTrack"
+        />
+    </div>
+    <div class="card">
+        <div class="card2">
+            <h2 class="login-header">
+                Iniciar sesi&oacute;n
+            </h2>
+            <form 
+                [formGroup]="FormLogin"
+                (keyup.enter)="Login()"
+            >
+                <div class="widget-body form-group">
+                    <div class="form-group">
+                        <div class="group">
+                            <input
+                                type="text"
+                                autocomplete="off"
+                                required
+                            />
+                                <!-- formControlName="Cuenta" -->
+                            <label class="MaterialLabel">
+                                Cuenta
+                            </label>
+                        </div>
+                        <small style="color: red;">
+                            La cuenta no es valida
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <div class="group password-input-wrapper">
+                            <input
+                                [type]="passwordVisible ? 'text' : 'password'"
+                                required
+                            />
+                            <!-- formControlName="Clave" -->
+                            <label class="MaterialLabel">
+                                Contrase&ntilde;a
+                            </label>
+                            <span class="password-icon" (click)="TogglePasswordVisibility()">
+                                <i
+                                    *ngIf="!passwordVisible"
+                                    class="fa fa-eye"
+                                >
+                                </i>
+                                <i
+                                    *ngIf="passwordVisible"
+                                    class="fa fa-eye-slash"
+                                >
+                                </i>
+                            </span>
+                        </div>
+                        <small style="color: red;">
+                            La contraseña no es valida
+                        </small>
+                    </div>
+                    <button
+                        type="button"
+                        [disabled]="FormLogin.invalid"
+                        class="login-button"
+                        (click)="Login()"
+                    >
+                        Ingresar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
