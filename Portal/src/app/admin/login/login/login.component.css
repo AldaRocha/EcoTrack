@@ -1,0 +1,106 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom right,
+        #3DBEED,
+        #3A63EB
+    );
+}
+
+.logo-container{
+    max-width: 200px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.logo{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15%;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(
+        163deg,
+        #30CB3B 0%,
+        #1D9E00 100%
+    );
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.card2 {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    transition: all .2s;
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    z-index: 0; 
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.login-header {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group{
+    position: relative;
+}
+
+.form-group input{
+    color: #3A63EB;
+    background: transparent;
+    border: 1px solid #3A63EB;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    z-index: 1;
+    width: calc(100% - 22px);
+}
+
+.form-group label{
+    position: absolute;
+    top: 35%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: #3A63EB;
+}
+
+input[type="password"]{
+    padding-right: 35px;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: 0;
+    font-size: 16px;
+    padding: 0 15px;
+    background: #F2F2F2;
+}
