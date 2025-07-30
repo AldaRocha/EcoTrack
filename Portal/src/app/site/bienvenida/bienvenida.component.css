@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0e0e0;
+}
+
+.barra-superior {
+  background-color: #3d5af1;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  color: white;
+}
+
+.logo {
+  height: 35px;
+}
+
+.usuario {
+  font-size: 14px;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 60px;
+  background-color: #333;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  color: white;
+}
+
+.hamburguesa {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.contenido-principal {
+  margin-left: 60px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+}
+
+.bienvenida-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  max-width: 500px;
+  text-align: center;
+}
+
+.texto-bienvenida h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.texto-bienvenida p {
+  font-size: 14px;
+  margin-top: 10px;
+}

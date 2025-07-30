@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.acerca {
+    font-family: 'Montserrat';
+    margin-top: 100px;
+}
+
+.fondo-group {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 530px;
+    border-radius: 8px;
+}
+
+.fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    top: 50%;
+    right: -15%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: black;
+    width: 50%;
+    font-family: 'Montserrat';
+
+}
+
+.texto-sobre-imagen h1 {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.espacio {
+    height: 60px;
+}
+
+.Misión {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Montserrat';
+}
+
+.titulo-seccion {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 5rem;
+    color: #3DBEED;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.mision1 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.vision1 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.Visión {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Montserrat';
+}
+.titulo-seccion1 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 5rem;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.valores1 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.Valores {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Montserrat';
+}
+.linea1{
+    font-weight: 600;
+}

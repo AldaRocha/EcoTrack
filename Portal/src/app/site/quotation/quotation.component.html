@@ -1,3 +1,77 @@
-<div>
-    Vista Cotizaciones de EcoDev
+<div class="cotizacion">
+    <app-header></app-header>
+    <div class="fondo-group">
+        <img class="fondo" src="assets/img/cotiza.png" alt="50" width="1400">
+        <div class="texto-sobre-imagen">
+            <h1>Cotiza a tu</h1>
+            <h1>necesidad</h1>
+        </div>
+    </div>
+    <div class="espacio"></div>
+    <div class="contenedor-horizontal">
+  <div class="imagen">
+    <img class="img" src="assets/img/cotizacion.png" alt="50" width="600">
+  </div>
+  
+  <div class="texto">
+    <h3 class="cotizar">
+      <span class="linea1">Pide tu presupuesto para tu</span><br>
+      <span class="linea1">proyecto de reciclaje</span><br>
+    </h3>
+    <h3 class="cotizar">
+      <span class="linea">Solicita un presupuesto personalizado para</span><br>
+      <span class="linea">tu proyecto de reciclaje</span>
+    </h3>
+    <h3 class="cotizar">
+      <span class="linea">Adáptalo a tus necesidades y equípalo con el </span><br>
+      <span class="linea"> equipo de IoT, nuestra API de la IA y con el </span><br>
+       <span class="linea">uso de nuestra plataforma. </span>
+    </h3>
+  </div>
 </div>
+
+<div class="espacio1"></div>
+
+<div class="contenedor-formulario">
+  <form [formGroup]="quotationForm" (ngSubmit)="onSubmit()" class="formulario-grid">
+    
+    <div class="lado-izquierdo">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" formControlName="nombre" placeholder="Escribe tu nombre" />
+
+      <label for="telefono">Teléfono</label>
+      <input id="telefono" type="text" formControlName="telefono" placeholder="Escribe tu teléfono" />
+
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" placeholder="Escribe tu email" />
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </div>
+
+    <div class="lado-derecho">
+      <p class="pregunta">¿Qué producto o tecnología requieres de acuerdo a tus necesidades y características?</p>
+      <p>Selecciona tus preferencias.</p>
+
+      <label class="checkbox-label">
+        <input type="checkbox" formControlName="productoIoT" />
+        <strong>Producto IoT</strong><br />
+        <span>Incluye la banda transportadora con los respectivos sensores que miden la calidad del aire.</span>
+      </label>
+
+      <label class="checkbox-label">
+        <input type="checkbox" formControlName="apiIA" />
+        <strong>API de la IA</strong><br />
+        <span>Nuestra IA que ayuda a realizar la separación de los deshechos.</span>
+      </label>
+
+      <label class="checkbox-label">
+        <input type="checkbox" formControlName="usoPlataforma" />
+        <strong>Uso de plataforma</strong><br />
+        <span>En nuestra plataforma podrás revisar los datos que se recopilen sobre lo que se ha estado recolectando, entre otros datos más.</span>
+      </label>
+    </div>
+  </form>
+</div>
+</div>
+<div class="espacio"></div>
+<app-footer></app-footer>

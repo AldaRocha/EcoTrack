@@ -1,5 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
 
 @Component({
     selector: "app-aboutus",
@@ -7,8 +9,10 @@ import { Component } from "@angular/core";
     styleUrls: ["./aboutus.component.css"],
     standalone: true,
     imports: [
-        CommonModule
-    ]
+    CommonModule,
+    Header,
+    Footer
+]
 })
 export class AboutUsComponent{
     

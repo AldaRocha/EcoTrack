@@ -1,0 +1,50 @@
+<div class="footer-wrapper">
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div class="footer-left">
+        <div class="footer-section">
+          <h4>Empresa</h4>
+          <p (click)="navigateTo('/aboutus')">Acerca de</p>
+          <p>Medios de comunicación</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Apoyo</h4>
+          <p (click)="navigateTo('/contactus')">Contáctanos</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Usuario Existente</h4>
+          <p>Iniciar sesión</p>
+        </div>
+
+        <p class="footer-legal">
+          Privacidad & políticas de cookies <br>
+          Copyright © 2025 EcoDev. Todos los derechos reservados.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <img src="assets/img/Logo.jpg" alt="EcoDev Logo" class="logo">
+        <p class="eco-title">EcoDev</p>
+
+        <input type="email" placeholder="Email" class="input-email" [(ngModel)]="email" name="email">
+
+
+        <p class="privacy-text">
+          Valoramos su privacidad de acuerdo con nuestra Política de Privacidad.
+          Al registrarse, acepta recibir nuestras actualizaciones.
+        </p>
+
+        <label class="checkbox-container">
+          <input type="checkbox" [(ngModel)]="aceptaNotificaciones" name="acepta">
+          <span>Acepto recibir otras comunicaciones de EcoDev.</span>
+        </label>
+
+        <button class="subscribe-btn" (click)="guardarSuscripcion()">Recibir noticias</button>
+      </div>
+
+    </div>
+  </footer>
+</div>
