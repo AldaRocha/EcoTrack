@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.contactanos {
+    font-family: 'Montserrat';
+     margin-top: 100px;
+}
+
+.fondo-group {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 530px;
+    border-radius: 8px;
+}
+
+.fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    width: 45%;
+    font-family: 'Montserrat';
+
+}
+
+.texto-sobre-imagen h1 {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.form-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #30cd59;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.aviso {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.espacio {
+    height: 60px;
+}

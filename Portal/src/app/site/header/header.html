@@ -1,0 +1,23 @@
+<header class="eco-header">
+  <div class="header-container">
+    <div class="logo-group">
+      <img class="logo" src="assets/img/Logo.jpg" alt="Logo" width="100">
+      <a class="logo-text">EcoDev</a>
+    </div>
+
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="main-nav">
+      <a (click)="navigateTo('/home')">Home</a>
+      <a (click)="navigateTo('/aboutus')">Nosotros</a>
+      <a (click)="navigateTo('/contactus')">Contáctos</a>
+      <a (click)="navigateTo('/quotation')" class="login-btn">Cotizar</a>
+    </nav>
+  </div>
+</header>
