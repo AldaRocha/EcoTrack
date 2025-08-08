@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.footer-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat';
+  
+}
+
+.footer {
+  background-color: #3d5af1;
+  color: white;
+  padding: 40px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 50%;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.footer-legal {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.footer-right {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Montserrat';
+}
+
+.logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.eco-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input-email {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.privacy-text {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.checkbox-container input {
+  margin-right: 8px;
+}
+
+.subscribe-btn {
+  background-color: #30CB3D;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+  background-color:  #1D9E00;
+}
+
+
