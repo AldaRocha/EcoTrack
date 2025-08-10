@@ -16,5 +16,6 @@ export class Header {
 
   navigateTo(path: string) {
     this.router.navigateByUrl('/ecodev' + path);
+    window.scrollTo(0, 0);
   }
 }
