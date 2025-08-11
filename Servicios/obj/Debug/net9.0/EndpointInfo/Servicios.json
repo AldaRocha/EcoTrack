@@ -197,6 +197,37 @@
         }
       }
     },
+    "/api/v1/quotation": {
+      "post": {
+        "tags": [
+          "Quotation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuotationModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuotationModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuotationModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/seguridad/usuario": {
       "post": {
         "tags": [
@@ -244,14 +275,103 @@
           }
         }
       }
+    },
+    "/api/v1/subscription": {
+      "post": {
+        "tags": [
+          "Subscription"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriptionModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriptionModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriptionModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/subscription/activate": {
+      "post": {
+        "tags": [
+          "Subscription"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "token",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "QuotationModel": {
+        "type": "object",
+        "properties": {
+          "Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "Telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "ProductoIoT": {
+            "type": "string",
+            "nullable": true
+          },
+          "ApiIA": {
+            "type": "string",
+            "nullable": true
+          },
+          "UsoPlataforma": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "RequestInterface": {
         "type": "object",
         "properties": {
-          "token": {
+          "Token": {
             "type": "string",
             "nullable": true
           }
@@ -261,14 +381,27 @@
       "Response": {
         "type": "object",
         "properties": {
-          "message": {
+          "Message": {
             "type": "string",
             "nullable": true
           },
-          "token": {
+          "Token": {
             "nullable": true
           },
           "headers": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubscriptionModel": {
+        "type": "object",
+        "properties": {
+          "Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "AcceptsNotifications": {
             "type": "boolean"
           }
         },
