@@ -104,6 +104,22 @@
     ]
   },
   {
+    "ContainingType": "Servicios.Controllers.v1.Sistema.QuotationController",
+    "Method": "SendQuotation",
+    "RelativePath": "api/v1/quotation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Servicios.Models.ViewModel.QuotationModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Servicios.Controllers.v1.Sistema.SeguridadController",
     "Method": "GuardarUsuario",
     "RelativePath": "api/v1/seguridad/usuario",
@@ -128,5 +144,42 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Servicios.Controllers.v1.Sistema.SubscriptionController",
+    "Method": "Subscribe",
+    "RelativePath": "api/v1/subscription",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Servicios.Models.ViewModel.SubscriptionModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Servicios.Controllers.v1.Sistema.SubscriptionController",
+    "Method": "ActivateNotifications",
+    "RelativePath": "api/v1/subscription/activate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

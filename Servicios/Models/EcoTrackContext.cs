@@ -17,5 +17,7 @@ namespace Servicios.Models
         public DbSet<TipoUsuario> TipoUsuario { get; set; }
         public DbSet<Usuarioporperfil> Usuarioporperfil { get; set; }
         public DbSet<Perfil> Perfil { get; set; }
+        public DbSet<Subscription> Subscription { get; set; }
+        public DbSet<Cotizacion> Cotizaciones { get; set; }
     }
 }
