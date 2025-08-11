@@ -1,7 +1,6 @@
 <div class="footer-wrapper">
   <footer class="footer">
     <div class="footer-content">
-
       <div class="footer-left">
         <div class="footer-section">
           <h4>Empresa</h4>
@@ -16,7 +15,7 @@
 
         <div class="footer-section">
           <h4>Usuario Existente</h4>
-          <p>Iniciar sesión</p>
+          <p (click)="navigateTo('/login')">Iniciar sesión</p>
         </div>
 
         <p class="footer-legal">
@@ -25,26 +24,61 @@
         </p>
       </div>
 
+      <!-- Sección derecha con el formulario de suscripción -->
       <div class="footer-right">
         <img src="assets/img/Logo.jpg" alt="EcoDev Logo" class="logo">
         <p class="eco-title">EcoDev</p>
 
-        <input type="email" placeholder="Email" class="input-email" [(ngModel)]="email" name="email">
+        <!-- Formulario de suscripción -->
+        <form [formGroup]="subscriptionForm" (ngSubmit)="guardarSuscripcion()" class="subscription-form">
+          <div class="form-group">
+            <input 
+              type="email" 
+              formControlName="email"
+              placeholder="Email" 
+              class="input-email"
+              [ngClass]="{
+                'input-error': subscriptionForm.get('email')?.invalid && 
+                             (subscriptionForm.get('email')?.dirty || subscriptionForm.get('email')?.touched)
+              }"
+            >
+            <div *ngIf="subscriptionForm.get('email')?.invalid && 
+                      (subscriptionForm.get('email')?.dirty || subscriptionForm.get('email')?.touched)"
+                 class="error-message">
+              <span *ngIf="subscriptionForm.get('email')?.errors?.['required']">
+                El email es requerido
+              </span>
+              <span *ngIf="subscriptionForm.get('email')?.errors?.['email']">
+                Por favor ingresa un email válido
+              </span>
+            </div>
+          </div>
 
+          <p class="privacy-text">
+            Valoramos su privacidad de acuerdo con nuestra Política de Privacidad.
+            Al registrarse, acepta recibir nuestras actualizaciones.
+          </p>
 
-        <p class="privacy-text">
-          Valoramos su privacidad de acuerdo con nuestra Política de Privacidad.
-          Al registrarse, acepta recibir nuestras actualizaciones.
-        </p>
+          <label class="checkbox-container">
+            <input 
+              type="checkbox" 
+              formControlName="aceptaNotificaciones"
+            >
+            <span>Acepto recibir otras comunicaciones de EcoDev.</span>
+          </label>
 
-        <label class="checkbox-container">
-          <input type="checkbox" [(ngModel)]="aceptaNotificaciones" name="acepta">
-          <span>Acepto recibir otras comunicaciones de EcoDev.</span>
-        </label>
-
-        <button class="subscribe-btn" (click)="guardarSuscripcion()">Recibir noticias</button>
+          <button 
+            type="submit" 
+            class="subscribe-btn"
+            [disabled]="subscriptionForm.invalid || isSubmitting"
+          >
+            <span *ngIf="!isSubmitting">Recibir noticias</span>
+            <span *ngIf="isSubmitting">
+              <span class="spinner"></span> Enviando...
+            </span>
+          </button>
+        </form>
       </div>
-
     </div>
   </footer>
 </div>

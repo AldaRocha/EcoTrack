@@ -4,6 +4,7 @@ import Swal from 'sweetalert2';
 import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 import { ReactiveFormsModule, FormGroup, FormControl, Validators } from "@angular/forms";
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: "app-quotation",
@@ -13,6 +14,7 @@ import { ReactiveFormsModule, FormGroup, FormControl, Validators } from "@angula
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    HttpClientModule,
     Header, 
     Footer
   ]
@@ -29,10 +31,11 @@ export class QuotationComponent {
     usoPlataforma: new FormControl(false),
   });
 
-  onSubmit() {
+  constructor(private http: HttpClient) { }
+
+   onSubmit() {
   if (this.quotationForm.valid) {
     const formValues = this.quotationForm.value;
-
     const convertedValues = {
       ...formValues,
       productoIoT: formValues.productoIoT ? 'Sí' : 'No',
@@ -40,17 +43,30 @@ export class QuotationComponent {
       usoPlataforma: formValues.usoPlataforma ? 'Sí' : 'No'
     };
 
-    console.log("Datos guardados:", convertedValues);
+    const apiUrl = 'http://localhost:5063/api/v1/quotation'; 
 
-    Swal.fire({
-      icon: 'success',
-      title: '¡Éxito!',
-      text: 'Formulario enviado correctamente.',
-      confirmButtonColor: '#0db920',
-      confirmButtonText: 'Aceptar'
+    this.http.post(apiUrl, convertedValues).subscribe({
+      next: (response) => {
+        Swal.fire({
+          icon: 'success',
+          title: '¡Éxito!',
+          text: 'Formulario enviado correctamente.',
+          confirmButtonColor: '#0db920',
+          confirmButtonText: 'Aceptar'
+        });
+        this.quotationForm.reset();
+      },
+      error: (error) => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.',
+          confirmButtonColor: '#dc3545',
+          confirmButtonText: 'Ok'
+        });
+        console.error("Error al enviar el formulario:", error);
+      }
     });
-
-    this.quotationForm.reset();
   } else {
     Swal.fire({
       icon: 'warning',
@@ -61,5 +77,4 @@ export class QuotationComponent {
     });
   }
 }
-
 }
